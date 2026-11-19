@@ -1,0 +1,25 @@
+# API
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+pydantic-settings>=2.4
+email-validator>=2.2
+
+# Database
+sqlalchemy>=2.0.36
+psycopg2-binary>=2.9.10
+
+# Auth
+pyjwt>=2.9
+pwdlib[argon2]>=0.2.1
+
+# RAG / LLM
+openai>=1.40          # client for Groq and any OpenAI-compatible API
+numpy>=1.26
+requests>=2.31
+
+# Optional: better local embeddings (downloads a ~130 MB model on first run).
+# Without it urSarthi uses built-in offline embeddings + keyword search.
+# fastembed>=0.4
+
+# Optional: shared cache / rate limits across several API workers (set REDIS_URL)
+redis>=5.0
